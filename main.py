@@ -63,7 +63,9 @@ def menu_criacao ():
         print(f"\nBem-vindo(a) {nick}"
               f"\nEsse jogo é bastante desafiador!"
               f"\n{idade} anos de experiência? Uau!")
+        time.sleep(2)
         print("\nHmmm... deixa eu pensar...")
+        time.sleep(2)
         print(f"\nAh, sim... seu personagem já nasceu com algumas habilidades, veja:\n")
         print(f"Habilidades: {', '.join(personagem['Habilidades'])}")
         print(f"Força: {personagem['Força']}")
