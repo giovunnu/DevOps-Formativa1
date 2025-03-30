@@ -38,7 +38,10 @@ def tipo_personagem():
           "3. POLICIAL\n"
           "4. BANDIDO\n"
           "5. PILOTO\n")
-    return int(input("Escolha seu personagem (digite o número): "))
+    try:
+        return int(input("Escolha seu personagem (digite o número): "))
+    except ValueError:
+        pass
 
 def menu_criacao ():
     print("-" * 5, " CRIE SEU PERSONAGEM ", "-" * 5)
