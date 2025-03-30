@@ -42,7 +42,7 @@ def tipo_personagem():
 
 def menu_criacao ():
     print("-" * 5, " CRIE SEU PERSONAGEM ", "-" * 5)
-    nick = input("Crie um nick bonito: ")
+    nick = input("Crie um nick bonito: ").upper()
     idade = int(input("Qual a idade do seu personagem? "))
     tipo = tipo_personagem()
 
