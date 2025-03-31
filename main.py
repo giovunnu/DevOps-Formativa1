@@ -71,7 +71,7 @@ def menu_criacao ():
         time.sleep(2)
         print("\nHmmm... deixa eu pensar...")
         time.sleep(2)
-        print(f"\nAh, sim... seu personagem já nasceu com algumas habilidades, veja:\n")
+        print(f"\nAh, sim... seu personagem já possui algumas habilidades, veja:\n")
         print(f"Habilidades: {', '.join(personagem['Habilidades'])}")
         print(f"Força: {personagem['Força']}")
         print(f"Velocidade: {personagem['Velocidade']}")
