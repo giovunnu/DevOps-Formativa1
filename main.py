@@ -32,16 +32,21 @@ habilidades_personagem = {
 }
 
 def tipo_personagem():
-    print("\n" ,"x" * 5, " OPÇÕES DE PERSONAGEM ", "x" * 5)
-    print("1. GUERREIRO\n"
-          "2. FAZENDEIRO\n"
-          "3. POLICIAL\n"
-          "4. BANDIDO\n"
-          "5. PILOTO\n")
-    try:
-        return int(input("Escolha seu personagem (digite o número): "))
-    except ValueError:
-        pass
+    while True:
+        print("\n" + "x" * 5, " OPÇÕES DE PERSONAGEM ", "x" * 5)
+        print("1. GUERREIRO\n"
+              "2. FAZENDEIRO\n"
+              "3. POLICIAL\n"
+              "4. BANDIDO\n"
+              "5. PILOTO\n")
+        try:
+            escolha = int(input("Escolha seu personagem (digite o número): "))
+            if 1 <= escolha <= 5:
+                return escolha
+            else:
+                print("Opção inválida! Escolha um número entre 1 e 5.")
+        except ValueError:
+            print("Entrada inválida! Digite apenas números entre 1 e 5.")
 
 def menu_criacao ():
     print("-" * 5, " CRIE SEU PERSONAGEM ", "-" * 5)
